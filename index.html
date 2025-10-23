@@ -7,34 +7,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<!-- LOGIN SECTION -->
-<div id="loginSection">
-    <h2>Enter Your Name to Start Quiz</h2>
-    <input type="text" id="nameInput" placeholder="Your Name">
-    <button id="startWithName">Start Quiz</button>
-    <p id="loginMsg" style="color:red;"></p>
-    <div class="adminInfo">
-        <p>WhatsApp: +923196393269</p>
-        <p>Email: rameeltanveer19@gmail.com</p>
-        <small>For admin use only</small>
+    <div id="loginSection" class="login-section">
+        <h1>CSS Quiz</h1>
+        <input type="text" id="nameInput" placeholder="Enter your name">
+        <button id="startWithName">Start Quiz</button>
+        <p id="loginMsg" class="error-msg"></p>
+        <p class="admin-info">For admin use only: <br>WhatsApp: +923196393269 <br>Email: rameeltanveer19@gmail.com</p>
     </div>
-</div>
 
-<!-- QUIZ APP -->
-<div id="quizApp" class="hidden">
-    <div id="quizHeader">
-        <span id="progressText"></span> | <span id="topicBadge"></span>
-        <div>Time Left: <span id="globalTimer"></span> | Question Timer: <span id="qTimer"></span></div>
+    <div id="quizApp" class="quiz-section hidden">
+        <div class="quiz-header">
+            <span id="progressText"></span>
+            <span id="topicBadge" class="topic-badge"></span>
+        </div>
+        <div class="timers">
+            <span>Global Timer: <span id="globalTimer"></span></span>
+            <span>Question Timer: <span id="qTimer"></span></span>
+        </div>
+        <div id="questionText" class="question-text"></div>
+        <div id="optionsList" class="options-list"></div>
+        <div class="nav-buttons">
+            <button id="prevBtn">Previous</button>
+            <button id="nextBtn">Next</button>
+        </div>
     </div>
-    <div id="questionText"></div>
-    <div id="optionsList"></div>
-    <div class="navButtons">
-        <button id="prevBtn" disabled>Previous</button>
-        <button id="nextBtn" disabled>Next</button>
-    </div>
-</div>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
