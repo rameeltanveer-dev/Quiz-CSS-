@@ -1,0 +1,54 @@
+.hidden { display:none; }
+
+#loginSection {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: #fafafa;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+#loginSection input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+#loginSection button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+#loginSection button:hover { background-color: #45a049; }
+
+.adminInfo {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.adminInfo p { margin: 5px 0; font-weight: bold; }
+.adminInfo small { display: block; color: #555; margin-top: 5px; }
+
+#quizApp { max-width: 700px; margin: 30px auto; padding: 20px; border:2px solid #ccc; border-radius:10px; background:#fff; }
+#quizHeader { margin-bottom: 15px; }
+#questionText { font-size: 20px; margin-bottom:15px; }
+#optionsList .option { 
+    padding:10px; margin:5px 0; border:1px solid #ccc; border-radius:5px; cursor:pointer; 
+}
+#optionsList .option.correct { background-color: #4CAF50; color:white; }
+#optionsList .option.wrong { background-color: #f44336; color:white; }
+#optionsList .option.disabled { pointer-events:none; opacity:0.6; }
+
+.navButtons { margin-top: 15px; }
+.navButtons button { padding: 10px 15px; margin:0 5px; border:none; border-radius:5px; background:#2196F3; color:white; cursor:pointer; }
+.navButtons button:disabled { background:#ccc; cursor:not-allowed; }
