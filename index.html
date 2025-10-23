@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOGIN SECTION -->
+<div id="loginSection">
+    <h2>Enter Your Name to Start Quiz</h2>
+    <input type="text" id="nameInput" placeholder="Your Name">
+    <button id="startWithName">Start Quiz</button>
+    <p id="loginMsg" style="color:red;"></p>
+    <div class="adminInfo">
+        <p>WhatsApp: +923196393269</p>
+        <p>Email: rameeltanveer19@gmail.com</p>
+        <small>For admin use only</small>
+    </div>
+</div>
+
+<!-- QUIZ APP -->
+<div id="quizApp" class="hidden">
+    <div id="quizHeader">
+        <span id="progressText"></span> | <span id="topicBadge"></span>
+        <div>Time Left: <span id="globalTimer"></span> | Question Timer: <span id="qTimer"></span></div>
+    </div>
+    <div id="questionText"></div>
+    <div id="optionsList"></div>
+    <div class="navButtons">
+        <button id="prevBtn" disabled>Previous</button>
+        <button id="nextBtn" disabled>Next</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
