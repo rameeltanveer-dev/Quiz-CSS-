@@ -1,54 +1,98 @@
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background: #f0f0f0;
+}
+
 .hidden { display:none; }
 
-#loginSection {
-    max-width: 400px;
-    margin: 50px auto;
-    padding: 20px;
-    text-align: center;
-    border: 2px solid #ddd;
-    border-radius: 10px;
-    background-color: #fafafa;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+.login-section, .quiz-section{
+    background:#fff;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 15px rgba(0,0,0,0.2);
+    width:90%;
+    max-width:500px;
+    text-align:center;
 }
-#loginSection input[type="text"] {
-    width: 80%;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-}
-#loginSection button {
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    border: none;
-    background-color: #4CAF50;
-    color: white;
-    cursor: pointer;
-}
-#loginSection button:hover { background-color: #45a049; }
 
-.adminInfo {
-    margin-top: 15px;
-    padding: 10px;
-    background-color: #f2f2f2;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+input[type=text]{
+    padding:10px;
+    width:80%;
+    margin-bottom:10px;
+    border-radius:5px;
+    border:1px solid #ccc;
 }
-.adminInfo p { margin: 5px 0; font-weight: bold; }
-.adminInfo small { display: block; color: #555; margin-top: 5px; }
 
-#quizApp { max-width: 700px; margin: 30px auto; padding: 20px; border:2px solid #ccc; border-radius:10px; background:#fff; }
-#quizHeader { margin-bottom: 15px; }
-#questionText { font-size: 20px; margin-bottom:15px; }
-#optionsList .option { 
-    padding:10px; margin:5px 0; border:1px solid #ccc; border-radius:5px; cursor:pointer; 
+button{
+    padding:10px 20px;
+    border:none;
+    background:#007BFF;
+    color:#fff;
+    border-radius:5px;
+    cursor:pointer;
+    margin:5px;
 }
-#optionsList .option.correct { background-color: #4CAF50; color:white; }
-#optionsList .option.wrong { background-color: #f44336; color:white; }
-#optionsList .option.disabled { pointer-events:none; opacity:0.6; }
 
-.navButtons { margin-top: 15px; }
-.navButtons button { padding: 10px 15px; margin:0 5px; border:none; border-radius:5px; background:#2196F3; color:white; cursor:pointer; }
-.navButtons button:disabled { background:#ccc; cursor:not-allowed; }
+button:disabled{
+    background:#aaa;
+    cursor:not-allowed;
+}
+
+.error-msg{
+    color:red;
+    margin-top:10px;
+}
+
+.topic-badge{
+    background:#007BFF;
+    color:#fff;
+    padding:3px 8px;
+    border-radius:5px;
+    font-size:0.9em;
+}
+
+.options-list{
+    display:flex;
+    flex-direction:column;
+    margin:20px 0;
+}
+
+.option{
+    background:#e0e0e0;
+    padding:10px;
+    border-radius:5px;
+    margin:5px 0;
+    cursor:pointer;
+}
+
+.option.correct{
+    background: #4CAF50;
+    color:#fff;
+}
+
+.option.wrong{
+    background: #F44336;
+    color:#fff;
+}
+
+.option.disabled{
+    pointer-events:none;
+    opacity:0.6;
+}
+
+.nav-buttons{
+    display:flex;
+    justify-content:space-between;
+}
+
+.admin-info{
+    font-size:0.9em;
+    margin-top:15px;
+    color:#333;
+}
